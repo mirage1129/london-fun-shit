@@ -24,7 +24,7 @@ export default function App() {
         <Meta />
         <Links />
       </head>
-      <body class="bg-lani-teal">
+      <body>
         <Outlet />
         <LiveReload />
       </body>

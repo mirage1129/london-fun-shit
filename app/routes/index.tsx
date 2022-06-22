@@ -1,8 +1,9 @@
 export default function IndexRoute() {
   return (
-  <div class="overflow-hidden">
-    <div class="text-6xl md:text-9xl font-semibold text-white rotate-30 bg-yellow-300 pl-12 pt-56">
-      <div class="md:flex justify-center"> 
+  <div class="overflow-hidden bg-lani-teal h-screen w-screen">
+    <div class="text-6xl md:text-9xl font-semibold text-white rotate-30 bg-yellow-300 h-2/4 pl-12">
+      <div class="md:flex absolute left-16 bottom-3"> 
+      
         <p>ADVENTURE</p>
         <p class="pl-5">AWAITS</p>
       </div>
