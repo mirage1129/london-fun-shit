@@ -4,7 +4,14 @@ module.exports = {
     "./app/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'lani-teal': '#15A7B0',
+      },
+      rotate: {
+        '30': '30deg',
+      },
+    },
   },
   plugins: [],
 }
