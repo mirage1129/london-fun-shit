@@ -24,8 +24,7 @@ export default function App() {
         <Meta />
         <Links />
       </head>
-      <body class="bg-lani-teal">
-        {/* overflow-clip */}
+      <body class="bg-lani-teal overflow-clip">
         <Outlet />
         <LiveReload />
       </body>
