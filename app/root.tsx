@@ -5,14 +5,11 @@ import {
   LiveReload,
   Meta,
   Outlet,
-  Scripts,
-  ScrollRestoration,
 } from "@remix-run/react";
 
 export function links() {
   return [{ rel: "stylesheet", href: styles }]
  }
- 
 
 export const meta: MetaFunction = () => ({
   charset: "utf-8",
@@ -28,9 +25,8 @@ export default function App() {
         <Links />
       </head>
       <body>
+        <h1 class="text-red-700">Hello world</h1> 
         <Outlet />
-        <ScrollRestoration />
-        <Scripts />
         <LiveReload />
       </body>
     </html>
