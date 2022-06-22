@@ -1,12 +1,10 @@
 export default function IndexRoute() {
   return (
   <div>
-    <div class="text-9xl font-semibold text-white rotate-30 pt-56 bg-yellow-300 pl-12">
-      <div class="flex justify-center"> 
+    <div class="text-6xl md:text-9xl font-semibold text-white rotate-30 bg-yellow-300 pl-12 pt-56">
+      <div class="md:flex justify-center"> 
         <p>ADVENTURE</p>
-      </div>
-      <div class="flex justify-center">
-        <p>AWAITS</p>
+        <p class="pl-5">AWAITS</p>
       </div>
     </div>
 
