@@ -25,7 +25,6 @@ export default function App() {
         <Links />
       </head>
       <body class="bg-lani-teal">
-      {/* overflow-clip */}
         <Outlet />
         <LiveReload />
       </body>
