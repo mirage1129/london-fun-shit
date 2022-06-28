@@ -1,6 +1,5 @@
-// import type { LoaderFunction } from "@remix-run/cloudflare"
-// import { json } from "@remix-run/cloudflare"
-// import { useLoaderData } from "@remix-run/react";
+import { useLoaderData } from "@remix-run/react";
+import {json, LoaderFunction} from "@remix-run/cloudflare";
 
 // export const loader: LoaderFunction = async ({
 //   params,
@@ -20,7 +19,7 @@
 // }
 
 
-import {json, LoaderFunction} from "@remix-run/cloudflare";
+
 
 export const loader: LoaderFunction = async ({context}) => {
   console.log(JSON.stringify(context)); // Displays `{"MYNAMESPACE":{},"ASSETS":{}}`
