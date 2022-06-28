@@ -31,7 +31,9 @@ export const loader: LoaderFunction = async ({context}) => {
 
 export default function AdventuresRoute() {
     // const adventure = useLoaderData();
-    const adventure = JSON.parse(useLoaderData());
+    
+    const string1 = JSON.stringify(useLoaderData())
+    const adventure = JSON.parse(string1);
     
 
     // const text = '{"name":"John", "birth":"1986-12-14", "city":"New York"}';
