@@ -35,7 +35,7 @@ export default function AdventuresRoute() {
     return (
       <div>
         {/* <p>{adventure.name} Adventure you know</p> */}
-        {JSON.stringify(adventure)}
+        {JSON.stringify(adventure.name)}
       </div>
     );
   }
