@@ -34,7 +34,7 @@ export default function AdventuresRoute() {
     console.log(adventure);
     return (
       <div>
-        <p>{adventure} Adventure you know</p>
+        <p>{adventure.name} Adventure you know</p>
       </div>
     );
   }
