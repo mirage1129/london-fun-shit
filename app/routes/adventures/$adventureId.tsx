@@ -34,7 +34,7 @@ export default function AdventuresRoute() {
     // console.log(adventure.name);
     return (
       <div>
-        {adventureArray[0]}
+        {adventureArray[1]}
         </div>
     );
   }
