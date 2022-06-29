@@ -18,7 +18,7 @@ import {json, LoaderFunction} from "@remix-run/cloudflare";
 //   );
 // }
 
-export const loader: LoaderFunction = async ({context}) => {
+export const loader: LoaderFunction = async ({context, params}) => {
   // console.log(JSON.stringify(context)); // Displays `{"MYNAMESPACE":{},"ASSETS":{}}`
 
   // const {
@@ -31,7 +31,7 @@ export const loader: LoaderFunction = async ({context}) => {
   // } = context;
   // add
 
-  const adventure = await context.ADVENTURE_INFO.get(`${context.adventureId}`);
+  const adventure = await context.ADVENTURE_INFO.get(`${params.adventureId}`);
   // const value = await context.ADVENTURE_INFO.list();
   // console.log(value); // Displays `null`
   return json({adventure});
