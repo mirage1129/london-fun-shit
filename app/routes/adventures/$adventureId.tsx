@@ -28,13 +28,13 @@ export const loader: LoaderFunction = async ({context}) => {
 
 export default function AdventuresRoute() {
     const adventure = useLoaderData();
-
+    const adventureData = JSON.parse(adventure.adventure)
 
    
     // console.log(adventure.name);
     return (
       <div>
-        {adventure.adventure.name}
+        {adventureData.name}
         </div>
     );
   }
