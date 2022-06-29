@@ -27,14 +27,14 @@ export const loader: LoaderFunction = async ({context}) => {
 };
 
 export default function AdventuresRoute() {
-    const adventure = useLoaderData();
+    const info = useLoaderData();
 
 
    
     // console.log(adventure.name);
     return (
       <div>
-        {adventure.adventure}
+        {adventure.info}
         </div>
     );
   }
