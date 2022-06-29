@@ -33,7 +33,7 @@ export default function AdventuresRoute() {
     // console.log(adventure.name);
     return (
       <div>
-        {adventure.adventure.location}
+        {adventure.adventure.object.location}
         </div>
     );
   }
