@@ -38,16 +38,14 @@ export default function AdventuresRoute() {
     // console.log(adventure.name);
     return (
       <div>
-        <div>
         {
         Object.keys(adventure.object).map((key, i) => (
           <p key={i}>
             <span>Key Name: {key}</span>
             <span>Value: {adventure.object[key]}</span>
           </p>
-        )
+        ))
       }
         </div> 
-      </div>
     );
   }
