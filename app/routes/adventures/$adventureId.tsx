@@ -49,8 +49,7 @@ export default function AdventuresRoute() {
     // console.log(adventure.name);
     return (
       <div>
-        {adventure.object.name}
-        {/* {JSON.stringify(adventure)} */}
+        {JSON.stringify(adventure.object)}
         </div> 
     );
   }
