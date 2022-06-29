@@ -30,16 +30,24 @@ export const loader: LoaderFunction = async ({context}) => {
 };
 
 export default function AdventuresRoute() {
-    const adventures = useLoaderData();
+    const adventure = useLoaderData();
     
+    // Object.keys(adventure); // get array of keys
+
+
     // console.log(adventure.name);
     return (
       <div>
-        {adventures.map((adventure) => (
-        <div key={adventure.name}>{adventure.location}</div>
-      ))}
-        
-        {/* <p>{adventure} Adventure you know</p> */}
+        <div>
+        {
+        Object.keys(adventure.object).map((key, i) => (
+          <p key={i}>
+            <span>Key Name: {key}</span>
+            <span>Value: {adventure.object[key]}</span>
+          </p>
+        )
+      }
+        </div> 
       </div>
     );
   }
