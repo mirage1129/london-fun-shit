@@ -28,7 +28,7 @@ export const loader: LoaderFunction = async ({context}) => {
 
 export default function AdventuresRoute() {
     const adventure = useLoaderData();
-    const adventureArray = Object.keys(adventure.adventure)
+    const adventureArray = Object.values(adventure.adventure)
 
    
     // console.log(adventure.name);
