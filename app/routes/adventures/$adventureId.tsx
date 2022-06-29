@@ -47,8 +47,8 @@ export default function AdventuresRoute() {
       
      
       <div>
-        {/* {adventureObject.location} */}
-        {JSON.stringify(adventure)}
+        {adventureObject.location}
+        {/* {JSON.stringify(adventure)} */}
         </div>
 
       // <div>dfsfsdf</div>
