@@ -18,20 +18,20 @@ import {json, LoaderFunction} from "@remix-run/cloudflare";
 //   );
 // }
 
-export const loader: LoaderFunction = async ({context}) => {
+export const loader: LoaderFunction = async ({context}, {params}) => {
   // console.log(JSON.stringify(context)); // Displays `{"MYNAMESPACE":{},"ASSETS":{}}`
 
-  const {
-    request, // same as existing Worker API
-    env, // same as existing Worker API
-    params, // if filename includes [id] or [[path]]
-    waitUntil, // same as ctx.waitUntil in existing Worker API
-    next, // used for middleware or to fetch assets
-    data, // arbitrary space for passing data between middlewares
-  } = context;
+  // const {
+  //   request, // same as existing Worker API
+  //   env, // same as existing Worker API
+  //   params, // if filename includes [id] or [[path]]
+  //   waitUntil, // same as ctx.waitUntil in existing Worker API
+  //   next, // used for middleware or to fetch assets
+  //   data, // arbitrary space for passing data between middlewares
+  // } = context;
 
 
-  const adventure = await context.ADVENTURE_INFO.get(`${context.params.adventureId}`);
+  const adventure = await context.ADVENTURE_INFO.get(`${params.adventureId}`);
   // const value = await context.ADVENTURE_INFO.list();
   // console.log(value); // Displays `null`
   return json({adventure});
