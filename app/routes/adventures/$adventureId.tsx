@@ -20,22 +20,21 @@ import {json, LoaderFunction} from "@remix-run/cloudflare";
 
 export const loader: LoaderFunction = async ({context}) => {
   // console.log(JSON.stringify(context)); // Displays `{"MYNAMESPACE":{},"ASSETS":{}}`
-  const adventure = await context.ADVENTURE_INFO.get("1");
+  const adventure = await context.ADVENTURE_INFO.get("2");
   // const value = await context.ADVENTURE_INFO.list();
   // console.log(value); // Displays `null`
   return json({adventure});
 };
 
 export default function AdventuresRoute() {
-    const adventures = useLoaderData();
-    // const name = adventure.name
+    const adventure = useLoaderData();
 
 
    
     // console.log(adventure.name);
     return (
       <div>
-        {adventures.map(adventure => <div>{adventure.name}</div>)}
+        {adventure.adventure}
         </div>
     );
   }
