@@ -31,25 +31,14 @@ export const loader: LoaderFunction = async ({context}) => {
 
 export default function AdventuresRoute() {
     const adventure = useLoaderData();
-    const name = adventure.object.name
-    // const parsedAdventure = JSON.parse(adventure.object[adventure]);
+    const name = adventure.name
 
 
-    // const parsedAdventure = JSON.parse(adventure);
-    // console.log(parsedData.name);
-    // console.log(parsedData.skills);
-    // console.log(parsedData.jobtitel);
-    // console.log(parsedData.res_linkedin);
-
-    // const obj = JSON.parse('{"name":"John", "age":30, "city":"New York"}');
-
-    // Object.keys(adventure); // get array of keys
-
-
+   
     // console.log(adventure.name);
     return (
       <div>
-        {name}
+        {name} Should be the name
         </div> 
     );
   }
