@@ -1,5 +1,6 @@
 import { useLoaderData } from "@remix-run/react";
 import {json, LoaderFunction} from "@remix-run/cloudflare";
+import ReactMarkdown from 'react-markdown';
 
 export const loader: LoaderFunction = async ({context, params}) => {
   const adventure = await context.ADVENTURE_INFO.get(`${params.adventureId}`);
@@ -14,7 +15,7 @@ export default function AdventuresRoute() {
 
     return (
       <div>
-        {adventureObject.markup}
+        <ReactMarkdown>{adventureObject.markup}</ReactMarkdown>
       </div>
     );
   }
