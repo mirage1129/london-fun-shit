@@ -10,6 +10,7 @@ export default function AdventuresRoute() {
     const adventure = useLoaderData();
     const adventureObject = JSON.parse(adventure.adventure)
 
+    
 
     return (
       <div>
