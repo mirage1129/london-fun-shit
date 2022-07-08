@@ -10,12 +10,10 @@ export const loader: LoaderFunction = async ({context, params}) => {
 export default function AdventuresRoute() {
     const adventure = useLoaderData();
     const adventureObject = JSON.parse(adventure.adventure)
-    
-//if that doesnt work, try it with adventure.markup and see if that works and then try adventure.adventure.markup
 
     return (
       <div>
-        <ReactMarkdown>{adventure.markup}</ReactMarkdown>
+        <ReactMarkdown>{adventure.adventure.markup}</ReactMarkdown>
       </div>
     );
   }
